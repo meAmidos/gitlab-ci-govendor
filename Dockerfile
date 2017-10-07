@@ -10,7 +10,4 @@ RUN go get -u \
     github.com/kardianos/govendor && \
     rm -rf /go/src/github.com
 
-ADD entrypoint.sh /entrypoint.sh
-
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["bash"]
+ADD init.sh /init.sh
