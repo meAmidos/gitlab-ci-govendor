@@ -10,4 +10,6 @@ RUN go get -u \
     github.com/kardianos/govendor && \
     rm -rf /go/src/github.com
 
-ADD init.sh /init.sh
+ADD scripts/init.sh /init.sh
+ADD scripts/sync_deps.sh /sync_deps.sh
+ADD scripts/test.sh /test.sh
